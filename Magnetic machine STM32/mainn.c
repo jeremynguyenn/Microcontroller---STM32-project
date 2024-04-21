@@ -73,10 +73,10 @@ void Init_GPIO(void)
     GPIOB->ODR |= (1 << 1) | (1 << 2);
     // Dat tat ca cac chan tu PB8 den PB13 ve muc logic 0
     GPIOB->ODR &= ~((0b111111 << 8));
-		// Ðat PA2 la muc logic cao
-		GPIOA->BSRR = (1 << 2);    // Ðat PA2 thanh muc cao (logic 1)
-		// Ðat PA3 là muc logic thap
-		GPIOA->BRR = (1 << 3);     // Ðat PA3 thanh muc thap (logic 0) 
+		// Ãat PA2 la muc logic cao
+		GPIOA->BSRR = (1 << 2);    // Ãat PA2 thanh muc cao (logic 1)
+		// Ãat PA3 lÃ  muc logic thap
+		GPIOA->BRR = (1 << 3);     // Ãat PA3 thanh muc thap (logic 0) 
 
 }
 
@@ -167,7 +167,7 @@ void TIM3_IRQHandler(void)
     {
         encoderCount--;
         TIM3->SR &= ~(1 << 5);
-    } //neu co ngat TÌF duoc dat, no se giam bien so bo ma hoa va xoa co ngat TIF bang cach ghi 0.
+    } //neu co ngat TÃŒF duoc dat, no se giam bien so bo ma hoa va xoa co ngat TIF bang cach ghi 0.
 }
 
 void Update_lcd(void){
